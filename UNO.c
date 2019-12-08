@@ -6,8 +6,9 @@
 
 int main()
 {
-    //marta: falta declarar la variable que almacena toda la partida
+   
     tUNO p;
+    inicializar_partida(&p);
     
 }
 
