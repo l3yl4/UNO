@@ -21,3 +21,24 @@ void fin(){
     
 } // fucnión que controla el número de cartas de cada jugador y, en caso de que alguien se quede sin da por acabada la partida
 
+//LEYLA: 
+void inicializar_partida()
+{
+    tjugadores njugadores; 
+    tjugador nombre;
+    int modo;
+    
+    preguntar_njugadores(&njugadores);
+    preguntar_nombre(&nombre);
+    modo = preguntar_comprobacion(modo); //no he cogido el modo de dentro de la struct de partida.h porque no sé hacerlo, así que he sacado la variable del struct
+    
+            
+}
+// LEYLA:
+int preguntar_comprobacion()
+{
+    int m;
+    char pregunta[30] = "Modo comprobacion? "; //he cogido una función de la librería preguntas.h, y he puesto el 30 por poner algo: preguntaré a Marta
+    m = preguntar_si_o_no(pregunta);
+    return m;
+}

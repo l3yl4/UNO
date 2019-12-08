@@ -6,9 +6,12 @@
 
 int main()
 {
-   
     tUNO p;
+    
     inicializar_partida(&p);
+    
+    
+  
     
 }
 
