@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "cartas.h"
-#include "colores.h"
 
 /*int main ()
 {

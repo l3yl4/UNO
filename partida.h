@@ -15,18 +15,14 @@
 
 #ifndef PARTIDA_H
 #define PARTIDA_H
-#define TRUE 1
-#define FALSE 0
 
-#include"cartas.h"
 #include "jugadores.h"
-#include "preguntas.h"
+
 typedef struct
 {
     tbaraja fuera, robar;
     tjugadores j;
     int turno;
-    //marta: falta un campo que indique el modo de juego
     int modo; //1-modo comprobación, 2-modo juego
 }tUNO;
 
@@ -35,7 +31,7 @@ void robar_carta(); //función que escoge una carta aleatoria del mazo "robar" d
 void turno(); //recorra el vecotor de jugadores en buble (al no haber cartas de acción siempre será en el mismo sentido
 void fin(); // fucnión que controla el número de cartas de cada jugador y, en caso de que alguien se quede sin da por acabada la partida
 //LEYLA:
-void inicializar_partida();
+void inicializar_partida(tUNO *pp);
 int preguntar_comprobacion();
 
 

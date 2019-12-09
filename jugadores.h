@@ -17,11 +17,8 @@
 #define JUGADORES_H
 
 #include "cartas.h"
-#include "jugadores.h"
 
 #define DIM_NOMBRE 25
-#define NJUGADORESMAX 5
-#define NJUGADORESMIN 3
 #define NJUGADORES 4
 
 typedef struct
@@ -36,13 +33,12 @@ typedef struct
     tjugador vjugadores[NJUGADORES];   
 }tjugadores;
 
-//Marta: Pensad en los parámetros de las funciones
 void tirada(); // función que determina si puedes tirar o no, en caso de que sí se pueda determina las posibilidades
 void mostrar_nombre(); //imprimir por patalla el nombre de los jugadores
 void repartir_aleatoriamente(tbaraja *m, tjugadores *js); // función que reparte las cartas
 //LEYLA:
-void preguntar_njugadores(tjugadores *njugadores);
-void preguntar_nombre(tjugador nombre[DIM_NOMBRE]);
+void preguntar_njugadores(int *njugadores);
+void preguntar_nombre(char nombre[DIM_NOMBRE]);
 
 
 

@@ -1,15 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/* 
- * File:   cartas_ok.h
- * Author: virtual
- *
- * Created on 25 de noviembre de 2019, 15:48
- */
+#include "azar.h"
+#include "colores.h"
+#include "preguntas.h"
+
 #ifndef CARTAS_OK_H
 
 #define CARTAS_OK_H
